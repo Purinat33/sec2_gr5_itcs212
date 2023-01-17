@@ -1,0 +1,12 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');*/
+
+@font-face {
+    font-family: "Poppins";
+    src: url('../components/fonts/Poppins/Poppins-Black.ttf');
+}
+
+:root{
+    --main-color: #DD2F6E;
+    --color-dark: #1D2231;
+    --text-grey: 38390A2;
+}
