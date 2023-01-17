@@ -137,7 +137,6 @@ class Footer extends HTMLElement{
                     text-decoration: none;
                 }
 
-
             </style>
             <footer>
                 <nav>
