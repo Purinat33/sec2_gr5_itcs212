@@ -18,22 +18,19 @@
     <form>
         <fieldset>
             <legend>Login</legend>
-            <div class="user" align="center">
-                <label for="user">Username &nbsp;</label>
-                <input type="text" name="user" id="user">
-            </div>
-            <br>
-
-
-            <div class="pwd" align="center">
-                <label for="pwd">Password &nbsp;</label>
-                <input type="password" name="pwd" id="pwd">
-            </div>
-            <br>
-            <div align="center">
-                <input type="submit" value="Login">
-            </div>
-            
+            <table align="center">
+                <tbody>
+                    <tr>
+                        <td><label for="name">Username</label></td>
+                        <td><input id="name" type="text" name="name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password</label></td>
+                        <td><input id="password" type="password" name="password" required></td>
+                    </tr>
+                </tbody>
+            </table>
+            <input type="submit" value="Login" name="submit">
         </fieldset>
     </form>
 
