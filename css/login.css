@@ -169,3 +169,11 @@ input[type='submit']{
     margin-top: 10px;
     margin-bottom: 5px;
 }
+
+.checkbox a:visited{
+    color:#45f3ff;
+}
+
+.checkbox a:link{
+    color: #45f3ff;
+}

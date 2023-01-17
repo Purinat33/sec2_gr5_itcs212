@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup</title>
+
+    <script src="../scripts/jquery.min.js"></script>    
     <link rel="stylesheet" href="../css/login.css">
+
 
     <script>
         //https://thisinterestsme.com/disable-button-checkbox-checked/
@@ -48,12 +51,14 @@
                 </div>
                     <div class="checkbox">                                            
                         <input type="checkbox" id="terms_and_conditions" value="0" onclick="terms_changed(this)" />
-                        <label for="terms_and_conditions">I agree to the Terms of Service</label>
+                        <label for="terms_and_conditions">I agree to the <a href="../html/terms.html" target="_blank">Terms of Service</a></label>
                     </div>
                     <input type="submit" value="Register" id="submit_button" disabled >
                 </div>
             </form>
         </div>
     </div>
+
+
 </body>
 </html>
