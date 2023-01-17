@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../components/header.js"></script>
+    <script>
+        //https://thisinterestsme.com/disable-button-checkbox-checked/
+        //JavaScript function that enables or disables a submit button depending
+            //on whether a checkbox has been ticked or not.
+            function terms_changed(termsCheckBox) {
+                //If the checkbox has been checked
+                if (termsCheckBox.checked) {
+                    //Set the disabled property to FALSE and enable the button.
+                    document.getElementById("submit_button").disabled = false;
+                } else {
+                    //Otherwise, disable the submit button.
+                    document.getElementById("submit_button").disabled = true;
+                }
+            }
+    </script>
+
+    <script>
+            const modal = document.querySelector(".modal");
+            const overlay = document.querySelector(".overlay");
+            const openModalBtn = document.querySelector(".btn-open");
+            const closeModalBtn = document.querySelector(".btn-close");
+
+            const openModal = function () {
+                modal.classList.remove("hidden");
+                overlay.classList.remove("hidden");
+            };
+
+            openModalBtn.addEventListener("click", openModal);
+
+            const closeModal = function () {
+                        modal.classList.add("hidden");
+                        overlay.classList.add("hidden");
+            };
+
+            closeModalBtn.addEventListener("click", closeModal);
+            overlay.addEventListener("click", closeModal);
+
+
+    </script>
+
+</head>
+<body>
+
+    <head-banner></head-banner>
+<form>
+    <fieldset>
+        <legend>Register</legend>
+        <table align="center">
+            <tbody>
+                <tr>
+                    <td><label for="email">EMail</label></td>
+                    <td><input type="email" name="email" id="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="username">Username</label></td>
+                    <td><input type="text" name="username" id="username" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td><input type="password" name="password" id="password" required></td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+</form>
+<br>
+<br><br>
+<!-- Disabling until terms and condition is read -->
+<form>
+    <div>
+        <input type="checkbox" id="terms_and_conditions" value="0" onclick="terms_changed(this)" />
+<!--  -->
+        <label for="terms_and_conditions">I agree to the Terms of Service</label>
+    </div>
+</form>
+    <br>
+<form action="../index.html">
+    <div>
+        <button type="submit" id="submit_button" disabled>Sign Up</button>
+    </div>
+</form>
+
+
+
+<div class="redirectform">
+    <br>
+    <h4><a href="../html/login.html" target="_self">Already have an account? Login!</a></h4>
+</div>
+    
+    <foot-banner></foot-banner>
+</body>
+</html>
