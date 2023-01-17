@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock</title>
+    <link rel="stylesheet" href="../../css/dashboard.css">
+</head>
+<body>
+    <div id="LeftMenu">
+        <a href="javascript:void(0)" class="btn-area" onclick="closeBtn()">&times;</a>
+    
+        <div class="mainNav">
+            <a href="../../index.html" target="_self">Home</a>
+            <a href="../search.html">Search</a>
+            <a href="../about.html">About Us</a>
+            <a href="../redirect.html">Logout</a>
+        </div>
+    </div>
+    
+    <span onclick="openBtn()">
+        <h2>
+            <a href="javascript:void(0)" class="nothing">&#9776; Menu</a>
+        </h2>
+    </span>
+    
+    <div class="content">
+        <!--CONTENT HERE-->
+        <h2>Warehouse Management</h2>
+    </div>
+    
+    <script src="../../scripts/jquery.min.js"></script>
+    <script>
+        function openBtn() {
+            document.getElementById("LeftMenu").style.width = "250px";
+        }
+        function closeBtn() {
+            document.getElementById("LeftMenu").style.width = "0px";
+        }
+    </script>
+</body>
+</html>
