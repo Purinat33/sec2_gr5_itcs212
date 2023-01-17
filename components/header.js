@@ -1,4 +1,5 @@
 /*
+Credit:
 
 https://www.freecodecamp.org/news/reusable-html-components-how-to-reuse-a-header-and-footer-on-a-website/
 
@@ -76,7 +77,7 @@ class Footer extends HTMLElement{
     } 
     connectedCallback(){
         this.innerHTML = `
-<style>
+            <style>
                 nav{
                     height: 40px;
                     display: box;
@@ -118,19 +119,39 @@ class Footer extends HTMLElement{
                     height: 2.5rem;
                 }
 
+                .about{
+                    font-size: 24px;
+                }
+
+                .about a:link{
+                    color: white;
+                    text-decoration: none;
+                }
+
+                .about a:hover{
+                    text-decoration: underline;
+                }
+
+                .about a:visited{
+                    color: white;
+                    text-decoration: none;
+                }
+
 
             </style>
             <footer>
                 <nav>
-                    
+                    <ul class="about">
+                        <li><a href="../html/about.html" target="_self">Contact Us</a></li>
+                        <li>&nbsp;&nbsp;&nbsp;</li>
+                        <li><a href="../html/feedback.html" target="_self">Feedback</a></li>   
+                    </ul>
                 </nav>
             </footer>
             
         `
     }
 }
-
-
 
 customElements.define('foot-banner', Footer);
 customElements.define('head-banner', Header);

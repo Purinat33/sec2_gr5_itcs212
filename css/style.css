@@ -13,4 +13,9 @@ form, .redirectform{
     text-align: center;
     transform: translateY(50%);
     -ms-transform: translateY(50%);
+    color: black;
+}
+
+.redirectform a:visited{
+    color: black;
 }
