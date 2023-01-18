@@ -57,8 +57,8 @@ class Header extends HTMLElement{
         nav{
             width: 100%;
             height: 100px;
-            background: wheat; 
-            color: black;
+            background: black; 
+            color: white;
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -72,7 +72,7 @@ class Header extends HTMLElement{
 
         .menu a{
             text-decoration: none;
-            color: black;
+            color: white;
             padding: 10px 20px;
             font-size: 20px;
         }
@@ -84,7 +84,7 @@ class Header extends HTMLElement{
 
         .register a{
             text-decoration: none;
-            color: #fff;
+            color: white;
             padding: 10px 20px;
             font-size: 20px;
             border-radius: 8px;
@@ -94,7 +94,7 @@ class Header extends HTMLElement{
 
         .register a:hover{
             border: 1px solid indianred;
-            color: black;
+            color: white;
             background: transparent;
         }
 
@@ -105,7 +105,7 @@ class Header extends HTMLElement{
             max-width: 650px;
             transform: translate(-50%, -50%);
             text-align: center;
-            color: #fff;
+            color: white;
         }
 
         .h-text span{
@@ -121,7 +121,7 @@ class Header extends HTMLElement{
             text-decoration: none;
             background: indianred;
             padding: 10px 20px;
-            color: #fff;
+            color: white;
             letter-spacing:  5px;
             transition: 0.4s; 
         }
