@@ -11,6 +11,10 @@ body{
     align-items: center;
     min-height: 100vh;
     background: #23242a;
+
+        -moz-transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
 }
 
 .box{
