@@ -7,8 +7,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
 }
+
 
 .credit{
     position: absolute;
@@ -33,6 +33,7 @@ header{
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url('../img/bg2.jpeg');
     background-size: cover; 
+    /* background: solid black; */
     font-family: 'Poppins',sans-serif;
 
 }
