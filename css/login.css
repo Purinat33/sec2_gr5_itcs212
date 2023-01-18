@@ -12,9 +12,9 @@ body{
     min-height: 100vh;
     background: #23242a;
 
-        -moz-transform: scale(1.5);
-        -webkit-transform: scale(1.5);
-        transform: scale(1.5);
+        -moz-transform: scale(1.35);
+        -webkit-transform: scale(1.35);
+        transform: scale(1.35);
 }
 
 .box{

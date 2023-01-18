@@ -34,8 +34,6 @@ header{
     background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url('../img/bg2.jpeg');
     background-size: cover; 
     font-family: 'Poppins',sans-serif;
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
 
 }
 

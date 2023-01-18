@@ -12,145 +12,151 @@ class Header extends HTMLElement{
 //Define code snippets
     connectedCallback(){
         this.innerHTML = `
-            <style>
-                nav{
-                    height: 40px;
-                    display: box;
-                    padding-top: 6px;
-                    align-items: center;
-                    justify-content: center;
-                    background-color: gray;
-                }
 
-                ul, li{
-                    list-style: none;
-                    display: inline;
-                }
+        <style>
 
-                .home{
-                    margin: auto;
-                    margin-top: 0px;
-                    width: 0%;
-                    position: relative;
-                    top: -5px
-                }
+        @font-face{
+            font-family: "Poppins";
+            src: url('../components/fonts/Poppins/Poppins-Regular.ttf')
+        }
 
-                .button{
-                    position: absolute;
-                    right: 55px;
-                    margin: auto;
-                }
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
 
-                .search{
-                    position: absolute;
-                    right: 5px;
-                    margin: auto;
-                    top: 4px;
-                }
+        }
 
+        .credit{
+            position: absolute;
+            text-decoration: none;
+            bottom: 1px;
+            right: 1px;
+            color:black;
+        }
 
-            </style>
-            <header>
-                <nav>
-                    <ul class="home">
-                        <li><a href="../index.html" target="_self"><img src="../img/home.png" alt="home" width="40" height="40"></a></li>
-                    </ul>
-                    <ul class="button">
-                        <li ><a href="../html/login.html" target="_self"><img src="../img/login.png" alt="login" height="30"></a></li>
-                        <li><a href="../html/register.html" target="_self"><img src="../img/register.png" alt="register" height="30"></a></li>
-                        
-                    </ul>
+        .credit a:valid{
+            text-decoration: none;
+            color: black;
+        }
 
-                    <ul class="search">
-                    <li><a href="../html/search.html"><img src="../img/search.png" alt="search" width="35" height="35"></a></li>
-                    </ul>
-                </nav>
-            </header>
-            `
-    }
+        .credit a:visited{
+            text-decoration: none;
+            color: black;
+        }
 
-}
+        header{
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url('../img/bg2.jpeg');
+            background-size: cover; 
+            font-family: 'Poppins',sans-serif;
 
-class Footer extends HTMLElement{
-   constructor(){
-        super();
-    } 
-    connectedCallback(){
-        this.innerHTML = `
-            <style>
-                nav{
-                    height: 40px;
-                    display: box;
-                    padding-top: 6px;
-                    align-items: center;
-                    justify-content: center;
-                    background-color: gray;
-                }
+        }
 
-                ul, li{
-                    list-style: none;
-                    display: inline;
-                }
+        nav{
+            width: 100%;
+            height: 100px;
+            background: wheat; 
+            color: black;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
 
-                .home{
-                    margin: auto;
-                    
-                    width: 0%;
-                }
+        .logo{
+            font-size: 2em;
+            letter-spacing: 2px;
 
-                .button{
-                    position: absolute;
-                    right: 55px;
-                    margin: auto;
-                }
+        }
 
-                .search{
-                    position: absolute;
-                    right: 5px;
-                    margin: auto;
-                }
+        .menu a{
+            text-decoration: none;
+            color: black;
+            padding: 10px 20px;
+            font-size: 20px;
+        }
 
-                footer{
-                    position: absolute;
-                    display: box;
-                    bottom: 0;
-                    width: 100%;
-                    height: 50px;
-                    height: 2.5rem;
-                }
+        .menu a:hover{
+            border: 1px solid indianred;
+            background: transparent;
+        }
 
-                .about{
-                    font-size: 24px;
-                }
+        .register a{
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 20px;
+            border-radius: 8px;
+            background: indianred;
 
-                .about a:link{
-                    color: white;
-                    text-decoration: none;
-                }
+        }
 
-                .about a:hover{
-                    text-decoration: underline;
-                }
+        .register a:hover{
+            border: 1px solid indianred;
+            color: black;
+            background: transparent;
+        }
 
-                .about a:visited{
-                    color: white;
-                    text-decoration: none;
-                }
+        .h-text{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            max-width: 650px;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+        }
 
-            </style>
-            <footer>
-                <nav>
-                    <ul class="about">
-                        <li><a href="../html/about.html" target="_self">Contact Us</a></li>
-                        <li>&nbsp;&nbsp;&nbsp;</li>
-                        <li><a href="../html/feedback.html" target="_self">Feedback</a></li>   
-                    </ul>
-                </nav>
-            </footer>
-            
+        .h-text span{
+            letter-spacing: 5px;
+            font-size: 1.2em;
+        }
+
+        .h-text h1{
+            font-size: 3.5em;
+        }
+
+        .h-text a{
+            text-decoration: none;
+            background: indianred;
+            padding: 10px 20px;
+            color: #fff;
+            letter-spacing:  5px;
+            transition: 0.4s; 
+        }
+
+        .h-text a:hover{
+            border: 1px solid indianred;
+            background: transparent;
+        }
+        </style>
+
+        <nav>
+            <div class="logo">
+                OnlyGames
+            </div>
+            <div class="menu">
+                <a href="../index.html">Home</a>
+                <a href="catalogue.html">Browse</a>
+                <a href="about.html">Support</a>
+                <a href="search.html">Search</a>
+            </div>
+
+            <!--If user is logged in, whether through cookie or regustered-->
+            <script type="text/javascript">
+
+            </script>
+
+            <div class="register">
+                <!-- will change to logout once logged in -->
+                <a href="register.html" target="_self">Register</a>
+            </div>
+        </nav>
+
         `
     }
-}
 
-customElements.define('foot-banner', Footer);
+}
+    
 customElements.define('head-banner', Header);
