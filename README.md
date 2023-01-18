@@ -13,3 +13,6 @@ git pull origin master
 ```
 <hr>
 Note that this project is Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License licensed
+
+## About
+
