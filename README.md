@@ -15,4 +15,27 @@ git pull origin master
 Note that this project is Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License licensed
 
 ## About
+<p>This project is part of a semester project of ITCS212 Web Programming. The requirements/components are as followed</p>
+
+<ul>
+  <li>HTML5</li>
+  <li>CSS3</li>
+  <li>JavaScript ES6</li>
+  <li>Node.js</li>
+  <li>Database System (MySQL or MongoDB)</li>
+  <li>(Optional)Postman</li>
+</ul>
+
+# Contributors
+<ul>
+  <li>Purinat Pattanakeaw</li>
+    <ul>
+      <li><a href="https://github.com/Purinat33" target="_blank">GitHub</li>
+      <li><a href="https://www.linkedin.com/in/purinat-pattanakeaw/" target="_blank">LinkedIn</li>
+    </ul>
+  <li>Sittphon	Lerdtomolsakul</li>
+  <li>Kittiphum 	Mueangthongkham</li>
+  <li>Thanapat	Ritiluechai</li>
+  <li>Pattaradnai	Kaeodumkoeng</li>
+</ul>
 
