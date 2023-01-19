@@ -1,4 +1,4 @@
-# ITCS212 Project
+# ITCS212 Project (Front-End)
 
 To start with contribution, run:
 
@@ -17,10 +17,15 @@ Note that this project is Creative Commons Attribution-NonCommercial-ShareAlike 
 ## About
 <p>This project is part of a semester project of ITCS212 Web Programming. The requirements/components are as followed</p>
 
+### Front-End (This repository)
 <ul>
   <li>HTML5</li>
   <li>CSS3</li>
   <li>JavaScript ES6</li>
+</ul>
+
+### Back-End [Here](#)
+<ul>
   <li>Node.js</li>
   <li>Database System (MySQL or MongoDB)</li>
   <li>(Optional)Postman</li>
