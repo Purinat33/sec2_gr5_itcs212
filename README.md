@@ -39,6 +39,6 @@ Note that this project is Creative Commons Attribution-NonCommercial-ShareAlike 
   <li>Pattaradnai	Kaeodumkoeng</li>
 </ul>
 
-#### Note that pull request from non-member will not be accepted until atleast May due to the "no non-teammates contributiion policy"
+#### Note that pull request from non-member will not be accepted until atleast May due to the "no non-teammates contribution policy"
 
 ##### All design styles (CSS and JavaScript structures which are taken from youtube or other websites are credited where credit is due
