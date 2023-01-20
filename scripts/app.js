@@ -1,27 +1,27 @@
-// let genre;
-// let pprice;
-// let nname = true; //Default 
+let genre;
+let pprice;
+let nname = true; //Default 
 
-// function searchBy(a){
-//     if(a == 'genre'){
-//         nname = false;
-//         genre = true;
-//         pprice = false;
-//         console.log("Genere Click");
-//     }
-//     else if(a == 'price'){
-//         pprice = true;
-//         nname = false;
-//         genre = false;
-//         console.log("Price");
-//     }
-//     else{
-//         nname = true;
-//         pprice = false;
-//         genre = false;
-//     }
+function searchBy(a){
+    if(a == 'genre'){
+        nname = false;
+        genre = true;
+        pprice = false;
+        console.log("Genere Click");
+    }
+    else if(a == 'price'){
+        pprice = true;
+        nname = false;
+        genre = false;
+        console.log("Price");
+    }
+    else{
+        nname = true;
+        pprice = false;
+        genre = false;
+    }
     
-// }
+}
 
 // var btnContainer = document.getElementById("filter");
 // var btns = btnContainer.getElementsByClassName("btn");
@@ -42,7 +42,10 @@ const search = () =>{
     const storeitems = document.getElementById("product-list");
     const product = document.querySelectorAll(".product"); 
     const pname = storeitems.getElementsByTagName("h2");
-      
+    const pgenre = storeitems.getElementsByTagName('h3');
+    const pprice = storeitems.getElementsByTagName('h4');
+
+    if(nname){
         for(var i = 0 ; i < pname.length; i++){
             let match = product[i].getElementsByClassName('p-name')[0];
             
@@ -55,4 +58,33 @@ const search = () =>{
                 }
             }
         }
+    }
+    else if(genre){
+        for(var i = 0 ; i < pgenre.length; i++){
+            let match = product[i].getElementsByClassName('p-genre')[0];
+            
+            if(match){
+                let textValue =  match.textContent || match.innerHTML;
+                if(textValue.toUpperCase().indexOf(searchbox) > -1){
+                    product[i].style.display = "";
+                }else{
+                    product[i].style.display = "none";
+                }
+            }
+        }
+    }
+    else if(pprice){
+        for(var i = 0 ; i < pprice.length; i++){
+            let match = product[i].getElementsByClassName('p-price')[0];
+            
+            if(match){
+                let textValue =  match.textContent || match.innerHTML;
+                if(textValue.toUpperCase().indexOf(searchbox) > -1){
+                    product[i].style.display = "";
+                }else{
+                    product[i].style.display = "none";
+                }
+            }
+        }
+    }
 }
