@@ -6,12 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search</title>
 
+    <link rel="stylesheet" href="../css/fontawesome/css/all.css">
     <link rel="stylesheet" href="../css/style.css">
+    
     <script src="../components/header.js" defer></script>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .body{
+            width:100%;
+            height: 100vh;
+            background: rgb(240,239,243);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center ;
+        }
+
+        .container{
+            width:375px;
+            height: 520px;
+            background: #fff;
+        }
+    </style>
+
 
 </head>
 <body>
     <head-banner></head-banner>
+    <!--Search here-->
+    <section class="container">
+        <form>
+            <i class="fas fa-search"></i>
+            <input type="text" name="searchitem" id="search-item" placeholder="Search Products">
+        </form>
+    </section>
 
+
+    <script src="../scripts/app.js"></script>
 </body>
 </html>
