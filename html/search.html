@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="../css/style.css">
     
     <script src="../components/header.js" defer></script>
-    <script src="../scripts/app.js"></script>
     <style>
 
         *{
@@ -151,16 +150,15 @@
     <section class="container">
         
         <!-- Filter search Mode-->
-        <div class="filter">
-            <button class="btn active" onclick="byName()">Search by title</button>   
-            <button class="btn" onclick="byGenre()">Search by genre</button>   
-            <button class="btn" oncanplay="byPrice()">Search by price</button>   
-        </div>
+        <!-- <div id="filter">
+            <button class="btn active" onclick="searchBy('name')">Search by title</button>   
+            <button class="btn" onclick="searchBy('genre')">Search by genre</button>   
+            <button class="btn" onclick="searchBy('price')">Search by price</button>   
+        </div> -->
         <!-- Filter search mode-->
-
         <form>
             <i class="fas fa-search"></i>
-            <input type="text" name="searchitem" id="search-item" placeholder="Search Products"
+            <input type="text" name="search-item" id="search-item" placeholder="Search Products"
             onkeyup="search()">
         </form>
         <div class="product-list" id="product-list">
@@ -273,6 +271,7 @@
     </section>
 
 
-    <script src="../scripts/app.js"></script>
+    <script type="text/javascript" src="../scripts/app.js"></script>
+
 </body>
 </html>
