@@ -1,0 +1,57 @@
+
+
+.shopping{
+    display: flex;
+    margin-left: 500px;
+}
+
+.shopping button{
+    border-radius: .1rem;
+    background: rgb(226, 72, 72);
+    padding: 0 3rem;
+    transition: .2s opacity ;
+}
+.shopping button:hover{
+opacity: .9;
+cursor: pointer;
+}
+.counter-container{
+    border:1px solid #ffffff20;
+    border-radius: .1rem;
+    width: 3.3rem;
+    height: 3.3rem;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.counter-container svg{
+    width: 3rem;
+    color: rgb(19, 19, 19);
+
+}
+
+.counter-container span{
+    user-select: none;
+    position: absolute;
+    background: rgb(226, 72, 72);
+    width: 1.3rem;
+    height: 1.3rem;
+    font-size: .8rem;
+    border-radius: 50%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: .2rem;
+    right: .3rem;
+}
+
+.counter-container span:not(.animated-counter){
+display: none;
+
+}
+.counter-container span .animated-counter{
+    animation: count .4s ease-in-out;
+}
