@@ -5,33 +5,51 @@
         <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
         <script src="../components/header.js"></script>
         <style>
-            * {
-                @font-face {
-                    font-family: 'Poppins';
-                    src: url('../components/fonts/Poppins/Poppins-Black.ttf');
-                }
-
+            @font-face {
                 font-family: 'Poppins';
+                src: url('../components/fonts/Poppins/Poppins-Light.ttf');
+            }
+
+            .logo a:valid{
+                color: white;
+                text-decoration: none;
+                font-size: large;
+            }
+
+            .logo a:hover{
+                color:white;
+                border: 2px solid indianred;
+                padding: 4px;
+                font-size: large;
+            }
+
+            .logo a:visited{
+                color: white;
+                text-decoration: none;
+                font-size: large;
             }
         </style>
     </head>
     <body>
-        
-        <div class="header">
-            <p class="logo">OnlyGames</p>
-            <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
-        </div>
-        <div class="container">
-            <div id="root"></div>
-            <div class="sidebar">
-                <div class="head"><p>My Cart</p></div>
-                <div id="cartItem">Your cart is empty</div>
-                <div class="foot">
-                    <h3>Total</h3>
-                    <h2 id="total">0.00THB</h2>
+            <div class="header">
+                <p class="logo"><a href="catalogue.html" target="_self">&ll; Back</a></p>
+                <div class="cart"><i class="fa-solid fa-cart-shopping"></i>
+                    <p id="count">0</p>
                 </div>
             </div>
-        </div>
+            <div class="container">
+                <div id="root"></div>
+                <div class="sidebar">
+                    <div class="head">
+                        <p>My Cart</p>
+                    </div>
+                    <div id="cartItem">Your cart is empty</div>
+                    <div class="foot">
+                        <h3>Total</h3>
+                        <h2 id="total">0.00THB</h2>
+                    </div>
+                </div>
+            </div>
         <script src="../scripts/addtocart.js"></script>
     </body>
 </html>

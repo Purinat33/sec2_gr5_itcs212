@@ -75,7 +75,7 @@ const product = [
         id: 12,
         image: 'image/GTA.png',
         title: 'Grand Theft Auto V',
-        price: 939.99,
+        price: 939.00,
     },
     {
         id: 13,
@@ -167,7 +167,7 @@ function displaycart(){
             return(
                 `<div class='cart-item'>
                 <div class='row-img'>
-                    <img class='rowimg' src=${image}>
+                    <img class='rowimg' src=${image} width="300" height=200>
                 </div>
                 <p style='font-size:12px;'>${title}</p>
                 <h2 style='font-size: 15px;'>${price}.00THB</h2>`+
