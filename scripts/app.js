@@ -19,34 +19,34 @@ for (var i = 0; i < btns.length; i++) {
 } 
 
 let genre;
-let pprice;
+let creator;
 let nname = true; //Default 
 
 function searchBy(a){
     if(a == 'genre'){
         nname = false;
         genre = true;
-        pprice = false;
+        creator = false;
         console.log(
-            `nname = ${nname}\tgenre = ${genre}\tpprice = ${pprice}`
+            `nname = ${nname}\tgenre = ${genre}\tcreator = ${creator}`
         );
     }
     else if(a == 'price'){
-        pprice = true;
+        creator = true;
         nname = false;
         genre = false;
         
         console.log(
-            `nname = ${nname}\tgenre = ${genre}\tpprice = ${pprice}`
+            `nname = ${nname}\tgenre = ${genre}\tpprice = ${creator}`
         );
     }
     else{
         nname = true;
-        pprice = false;
+        creator = false;
         genre = false;
 
         console.log(
-            `nname = ${nname}\tgenre = ${genre}\tpprice = ${pprice}`
+            `nname = ${nname}\tgenre = ${genre}\tpprice = ${creator}`
         );
     }
     
@@ -73,7 +73,7 @@ const search = () =>{
     const product = document.querySelectorAll(".product"); 
     const pname = storeitems.getElementsByTagName("h2");
     const pgenre = storeitems.getElementsByTagName('h3');
-    const pprice = storeitems.getElementsByTagName('h4');
+    const pcreator = storeitems.getElementsByTagName('h4');
 
     if(nname){
         for(var i = 0 ; i < pname.length; i++){
@@ -103,8 +103,8 @@ const search = () =>{
             }
         }
     }
-    else if(pprice){
-        for(var i = 0 ; i < pprice.length; i++){
+    else if(pcreator){
+        for(var i = 0 ; i < pcreator.length; i++){
             let match = product[i].getElementsByClassName('p-price')[0];
             
             if(match){

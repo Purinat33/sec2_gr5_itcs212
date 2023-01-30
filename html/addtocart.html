@@ -5,6 +5,7 @@
         <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="../css/fontawesome/css/all.css">
         <script src="../components/header.js"></script>
+
         <style>
             @font-face {
                 font-family: 'Poppins';
@@ -37,8 +38,21 @@
                 <div class="cart"><i class="fa-solid fa-cart-shopping"></i>
                     <p id="count">0</p>
                 </div>
+                <!-- Filter search mode
+                <form>
+                    <i class="fas fa-search"></i>
+                    <input type="text" name="search-item" id="search-item" placeholder="Search Products" onkeyup="search()">
+                </form> -->
+
             </div>
             <div class="container">
+                <!-- Filter search Mode-->
+                <!-- <div id="filter">
+                    <button class="btn active" onclick="searchBy('name')">Search by title</button>
+                    <button class="btn" onclick="searchBy('genre')">Search by genre</button>
+                    <button class="btn" onclick="searchBy('price')">Search by creator</button>
+                </div> -->
+                
                 <div id="root"></div>
                 <div class="sidebar">
                     <div class="head">
