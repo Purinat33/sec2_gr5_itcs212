@@ -68,6 +68,19 @@
             color: #fff;
         }
 
+        .clear{
+            border: none;
+            outline: none;
+            padding: 12px 4px;
+            background-color: none;
+            cursor: pointer;
+        }
+
+        .clear:hover{
+            background: indianred;
+            color: white;
+        }
+
         .container form{
             width: 100%;
             border: 1px solid rgb(82, 74, 235);
@@ -101,6 +114,14 @@
             align-items: center;
             /* cursor: pointer; */
             padding-bottom: 15px;
+        }
+
+        .head4{
+            display: inline-flex;
+        }
+
+        .head4 h4{
+            margin-right: 30px;
         }
 
         .product img{
@@ -155,10 +176,11 @@
         <div id="filter">
             <button class="btn active" onclick="searchBy('name')">Search by title</button>   
             <button class="btn" onclick="searchBy('genre')">Search by genre</button>   
-            <button class="btn" onclick="searchBy('price')">Search by creator</button>   
+            <button class="btn" onclick="searchBy('creator')">Search by creator</button>   
+            <button class="clear" onclick="clearForm()"> &xotime;</button>   
         </div>
         <!-- Filter search mode-->
-        <form>
+        <form id="myForm">
             <i class="fas fa-search"></i>
             <input type="text" name="search-item" id="search-item" placeholder="Search Products"
             onkeyup="search()">
@@ -174,8 +196,11 @@
                     <div class="p-genre">
                         <h3>Adventure/Singleplayer</h3>
                     </div>
-                    <div class="p-price">
-                        <h4>Mojang ฿600</h4>
+                    <div>
+                        <span class="head4">
+                            <h4 class="p-price">Mojang</h4>
+                            <h4>฿600</h4>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -189,8 +214,11 @@
                     <div class="p-genre">
                         <h3>Sandbox/Adventure</h3>
                     </div>
-                    <div class="p-price">
-                        <h4>฿1500</h4>
+                    <div>
+                        <span class="head4">
+                            <h4 class="p-price">Redbeet</h4>
+                            <h4>฿1500</h4>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -203,8 +231,11 @@
                     <div class="p-genre">
                         <h3>Adventure/Singleplayer/RPG</h3>
                     </div>
-                    <div class="p-price">
-                        <h4>฿2400</h4>
+                    <div>
+                        <span class="head4">
+                            <h4 class="p-price">Santa Monica</h4>
+                            <h4>฿2400</h4>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -218,8 +249,11 @@
                     <div class="p-genre">
                         <h3>RPG/Singleplayer</h3>
                     </div>
-                    <div class="p-price">
-                        <h4>฿900</h4>
+                    <div>
+                        <span class="head4">
+                            <h4 class="p-price">From Software</h4>
+                            <h4>฿900</h4>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -233,8 +267,11 @@
                     <div class="p-genre">
                         <h3>FPS/Multiplayer</h3>
                     </div>
-                    <div class="p-price">
-                        <h4>฿1700</h4>
+                    <div>
+                        <span class="head4">
+                            <h4 class="p-price">Blizzard</h4>
+                            <h4>฿1700</h4>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -243,19 +280,22 @@
                 <img src="../img/raft.jpeg" alt="">
                 <div class="p-detail">
                     <div class="p-name">
-                        <h2>The Sims 3</h2>
+                        <h2>The Sims 4</h2>
                     </div>
                     <div class="p-genre">
                         <h3>Simulator/Singleplayer</h3>
                     </div>
-                    <div class="p-price">
-                        <h4>฿990</h4>
+                    <div>
+                        <span class="head4">
+                            <h4 class="p-price">EA</h4>
+                            <h4>฿990</h4>
+                        </span>
                     </div>
                 </div>
             </div>
 
             <div class="product">
-                <img src="../img/raft.jpeg" alt="">
+                <img src="image/Candy.jpg" alt="">
                 <div class="p-detail">
                     <div class="p-name">
                         <h2>Candy Crush Saga</h2>
@@ -263,8 +303,11 @@
                     <div class="p-genre">
                         <h3>Puzzle/Singleplayer</h3>
                     </div>
-                    <div class="p-price">
-                        <h4>FREE</h4>
+                    <div>
+                        <span class="head4">
+                            <h4 class="p-price">King</h4>
+                            <h4>FREE</h4>
+                        </span>
                     </div>
                 </div>
             </div>

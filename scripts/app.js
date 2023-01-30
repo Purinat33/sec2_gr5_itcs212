@@ -15,15 +15,19 @@ for (var i = 0; i < btns.length; i++) {
     var current = document.getElementsByClassName("active");
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
+    if(this.className.includes("active")){
+        clearForm();
+    }
   });
 } 
+//If clicking on the already active then do nothing
 
 let genre;
 let creator;
 let nname = true; //Default 
 
 function searchBy(a){
-    if(a == 'genre'){
+    if(a.toUpperCase() == 'GENRE'){
         nname = false;
         genre = true;
         creator = false;
@@ -31,7 +35,7 @@ function searchBy(a){
             `nname = ${nname}\tgenre = ${genre}\tcreator = ${creator}`
         );
     }
-    else if(a == 'price'){
+    else if(a.toUpperCase() == 'CREATOR'){
         creator = true;
         nname = false;
         genre = false;
@@ -49,7 +53,6 @@ function searchBy(a){
             `nname = ${nname}\tgenre = ${genre}\tpprice = ${creator}`
         );
     }
-    
 }
 
 // var btnContainer = document.getElementById("filter");
@@ -116,5 +119,16 @@ const search = () =>{
                 }
             }
         }
+    }
+}
+
+function clearForm(){
+    document.getElementById("myForm").reset();
+    // const searchbox = document.getElementById("search-item").value.toUpperCase();
+    const storeitems = document.getElementById("product-list");
+    const product = document.querySelectorAll(".product"); 
+    const pname = storeitems.getElementsByTagName("h2");
+    for(var i = 0; i < pname.length; i++){
+        product[i].style.display = "";
     }
 }
