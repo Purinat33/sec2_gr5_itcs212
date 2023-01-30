@@ -3,8 +3,20 @@
     <head>
         <link rel="stylesheet" href="../css/addtocart.css">
         <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+        <script src="../components/header.js"></script>
+        <style>
+            * {
+                @font-face {
+                    font-family: 'Poppins';
+                    src: url('../components/fonts/Poppins/Poppins-Black.ttf');
+                }
+
+                font-family: 'Poppins';
+            }
+        </style>
     </head>
     <body>
+        
         <div class="header">
             <p class="logo">OnlyGames</p>
             <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
@@ -16,10 +28,10 @@
                 <div id="cartItem">Your cart is empty</div>
                 <div class="foot">
                     <h3>Total</h3>
-                    <h2 id="total">$ 0.00</h2>
+                    <h2 id="total">0.00THB</h2>
                 </div>
             </div>
         </div>
-        <script src="addtocart.js"></script>
+        <script src="../scripts/addtocart.js"></script>
     </body>
 </html>

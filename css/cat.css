@@ -1,3 +1,13 @@
+* {
+    @font-face {
+        font-family: 'Poppins';
+        src: url('../components/fonts/Poppins/Poppins-Black.ttf');
+    }
+
+    font-family: 'Poppins';
+}
+
+
 .basket{
     width: 75px;
     height: 75px;
@@ -26,7 +36,7 @@ body{
     align-items: center;
     text-align: center;
     min-height: 100vh;
-  }
+ }
 
 .direction{
     position: absolute;
@@ -95,6 +105,32 @@ body{
     scroll-behavior: smooth;
     scroll-snap-type: both;
 }
+
+.item a:valid{
+    color: black;
+    text-decoration: none;
+}
+
+.item a:hover{
+    font-size: 20px;
+    background: solid indianred;
+}
+
+.item a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+.nameGroup a:valid{
+    color: black;
+    text-decoration: none;
+}
+
+.nameGroup a:visited{
+    color:black;
+    text-decoration: none;
+}
+
 #formList::-webkit-scrollbar{
     display: none;
 }
