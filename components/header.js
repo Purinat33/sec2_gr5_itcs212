@@ -155,7 +155,7 @@ class Header extends HTMLElement{
 
             <div class="register">
                 <!-- will change to logout once logged in -->
-                <a href="register.html" target="_self">Register</a>
+                <a href="login.html" target="_self">Login</a>
             </div>
         </nav>
         `
