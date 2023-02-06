@@ -10,24 +10,6 @@
     <script src="../scripts/jquery.min.js"></script>    
     <link rel="stylesheet" href="../css/login.css">
 
-
-    <script>
-        //https://thisinterestsme.com/disable-button-checkbox-checked/
-        //JavaScript function that enables or disables a submit button depending
-        //on whether a checkbox has been ticked or not.
-        function terms_changed(termsCheckBox) {
-            //If the checkbox has been checked
-            if (termsCheckBox.checked) {
-                //Set the disabled property to FALSE and enable the button.
-                document.getElementById("submit_button").disabled = false;
-            } else {
-                //Otherwise, disable the submit button.
-                document.getElementById("submit_button").disabled = true;
-            }
-        }
-    </script>
-
-
 </head>
 <body>
     <form class="box">
@@ -49,11 +31,7 @@
                     <a href="../html/login.html" target="_self">Login</a>
                     <a href="../index.html" target="_self">Home</a>
                 </div>
-                    <div class="checkbox">                                            
-                        <input type="checkbox" id="terms_and_conditions" value="0" onclick="terms_changed(this)" />
-                        <label for="terms_and_conditions">I agree to the <a href="../html/terms.html" target="_blank">Terms of Service</a></label>
-                    </div>
-                    <input type="submit" value="Register" id="submit_button" disabled >
+                    <input type="submit" value="Register" id="submit_button" >
                 </div>
             </form>
         </div>
