@@ -1,107 +1,133 @@
+
+
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title -->
     <title>OnlyGames | Overwatch2</title>
-
-    <link rel="stylesheet" href="css/Add.css">
-    <!-- <link rel="stylesheet" href="css/Style.css"> -->
-    <!-- <link rel="stylesheet" href="css/display.css"> -->
-    <link rel="stylesheet" href="css/Slide.css">
-
-  </head>
-
-  <body>
-    <header>
-      <script src="js/banner.js"></script>
-      <banner-custom></banner-custom>
-    </header>
-      
-    <main>
-      <h1>Overwatch 2 </h1>
-      <!-- Slideshow container -->
-      <div class="slideshow-container">
-
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides">
-        <img src="img/ow3.jpeg" >
-        </div>
-     
-        <div class="mySlides">
-        <img src="img/ow2.jpg" >
-        </div>
-     
-        <div class="mySlides">
-        <img src="img/ow1.jpg" >
-        </div>
-     
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-     </div>
-     <br>
-     
-     <!-- The dots/circles -->
-     <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-     </div>
-     
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Style0.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    
   
+  </head>
+  <body>
+    <script src="js/banner.js"></script>
+    <head>
+      <banner-custom></banner-custom>
+    </head>
     
-
-    </div>
-      <!-- -->
-      <div class="Detail">
-      <h3>Description: </h3> 
-      <p>Overwatch 2 is a free-to-play, team-based action game set in the optimistic future, where every match is the ultimate 5v5 battlefield
-         brawl. Play as a time-jumping freedom fighter, a beat-dropping battlefield DJ, or one of over 30 other unique heroes as you battle it
-          out around the globe.
-      </p><br>
-
-      <h3>Genre: </h3>
-      <ul>
-        <li> Team-based </li>
-        <li> action</li>
-        <li> free-to-play</li>
-      </ul>
-    
-        <!-- <h3>Price: Free </h3>
-        </div>
-        <br>
-        <div class="shopping">
-          <div class="counter-container">
-              <span id="counter">5</span>
-              <i data-feather="shopping-bag"></i>
+    <div class = "card-wrapper">
+      <div class = "card">
+        <!-- main image -->
+        <div class = "product-imgs">
+          <div class = "img-display">
+            <div class = "img-showcase">
+              <img src = "https://assets2.rockpapershotgun.com/overwatch-2-art.jpg/BROK/resize/1920x1920%3E/format/jpg/quality/80/overwatch-2-art.jpg" alt = "shoe image">
+              <img src = "https://cdn.wallpapersafari.com/43/83/Yvpejy.jpg" alt = "shoe image">
+              <img src = "https://www.notebookcheck.com/fileadmin/Notebooks/Sonstiges/Games/Overwatch/mood7_1.jpg" alt = "shoe image">
+              <img src = "https://www.numerama.com/wp-content/uploads/2018/11/ashe.jpg" alt = "shoe image">
+            </div>
           </div>
-          <button id="btn_add">Add to cart</button>
+
+          <!-- image select -->
+          <div class = "img-select">
+            <div class = "img-item">
+              <a href = "#" data-id = "1">
+                <img src = "https://assets2.rockpapershotgun.com/overwatch-2-art.jpg/BROK/resize/1920x1920%3E/format/jpg/quality/80/overwatch-2-art.jpg"  alt = "shoe image">
+              </a>
+            </div>
+            <div class = "img-item">
+              <a href = "#" data-id = "2">
+                <img src = "https://cdn.wallpapersafari.com/43/83/Yvpejy.jpg" alt = "shoe image">
+              </a>
+            </div>
+            <div class = "img-item">
+              <a href = "#" data-id = "3">
+                <img src = "https://www.notebookcheck.com/fileadmin/Notebooks/Sonstiges/Games/Overwatch/mood7_1.jpg" alt = "shoe image">
+              </a>
+            </div>
+            <div class = "img-item">
+              <a href = "#" data-id = "4">
+                <img src = "https://www.numerama.com/wp-content/uploads/2018/11/ashe.jpg" alt = "shoe image">
+              </a>
+            </div>
+            
+          </div>
           
-          <button id="btn_add">Buy Now</button>
-      
-         -->
-        
         </div>
-      
-      
 
-    </main>
-    <hr>
-
-    <footer>
-      <p>Copyright ©2022 OnlyGames Website</p>
-    </footer>
-
-    <script src="js/Slide.js"></script>
-    <script src="js/Add.js"></script>
-    <script src="https://unpkg.com/feather-icons"></script>
+        <!-- Game Profile -->
+        <div class = "product-content">
+          <h2 class = "product-title">Overwatch 2</h2>
+          <!-- <a href = "#" class = "product-link">visit OnlyGames store</a> -->
+          <a href="../../index.html" class="product-link">visit OnlyGames store</a>
+          <div class = "product-rating">
+            <i class = "fas fa-star"></i>
+            <i class = "fas fa-star"></i>
+            <i class = "fas fa-star"></i>
+            <i class = "fas fa-star"></i>
+            <i class = "fas fa-star-half-alt"></i>
+            <span>4.7</span>
+          </div>
+        <!-- Price -->
+          <div class = "product-price">
+            <p class = "last-price">Old Price: <span>฿1550.00</span></p>
+            <p class = "new-price">New Price: <span>฿0.00</span></p>
+          </div>
+          <!--Detail-->
+          <div class = "product-detail">
+            <h2>Game Description: </h2>
+            <p>Overwatch 2 is a free-to-play, team-based action game set in the optimistic future, where every match is the ultimate 5v5 battlefield
+              brawl. Play as a time-jumping freedom fighter, a beat-dropping battlefield DJ, or one of over 30 other unique heroes as you battle it
+               out around the globe. 
+            <ul>
+              <li>Genre: <span>Team-based, action, free-to-play</span></li>
+              <li>Available: <span>in stock</span></li>
+              <li>Publisher: <span>Blizzard Entertainment</span></li>
+              <li>Price:  <span>฿0.00</span></li>
+              
+              
+            </ul>
+          </div>
+          <!-- count / add to cart / compare -->
+          <div class = "purchase-info">
+            <input type = "number" min = "0" value = "1">
+            <button type = "button" class = "btn">
+              Add to Cart <i class = "fas fa-shopping-cart"></i>
+            </button>
+            <button type = "button" class = "btn">Compare</button>
+          </div>
+          <!-- Socail link -->
+          <div class = "social-links">
+            <p>Share At: </p>
+            <a href = "https://www.facebook.com/">
+              <i class = "fab fa-facebook-f "></i>
+            </a>
+            <a href = "https://twitter.com/">
+              <i class = "fab fa-twitter"></i>
+            </a>
+            <a href = "https://www.instagram.com/">
+              <i class = "fab fa-instagram"></i>
+            </a>
+            <a href = "https://www.whatsapp.com/">
+              <i class = "fab fa-whatsapp"></i>
+            </a>
+            <a href = "https://www.pinterest.com/">
+              <i class = "fab fa-pinterest"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
     
-    <script>
-      feather.replace();
-    </script>
-
+    
+    <script src="Slide0.js"></script>
   </body>
-      
+  <footer>
+  <p>Copyright ©2022 OnlyGames Website</p>
+  </footer>
 </html>
+

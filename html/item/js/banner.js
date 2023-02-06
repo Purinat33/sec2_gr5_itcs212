@@ -24,7 +24,7 @@ class Banner extends HTMLElement{
          font-family: 'Poppins';
          width: 100%;
          height: 100px;
-         background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url('../../../../img/bg2.jpeg');
+         background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url('../../img/bg2.jpeg');
          color: white;
          display: flex;
          justify-content: space-around;
