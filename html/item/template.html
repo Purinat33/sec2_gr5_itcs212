@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- title -->
+    <title>OnlyGames | {{title}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Style0.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <script src="js/banner.js"></script>
+
+    <head>
+        <banner-custom></banner-custom>
+    </head>
+    <br>
+
+    <div class="card-wrapper">
+        <div class="card">
+            <!-- main image -->
+            <div class="product-imgs">
+                <div class="img-display">
+                    <div class="img-showcase">
+                        <img src="1"
+                            alt="shoe image">
+                        <img src="2"
+                            alt="shoe image">
+                        <img src="3"
+                            alt="shoe image">
+                        <img src=4"
+                            alt="shoe image">
+                    </div>
+                </div>
+
+                <!-- image select  -->
+                <div class="img-select">
+                    <div class="img-item">
+                        <a href="#" data-id="1">
+                            <img src="1"
+                                alt="shoe image">
+                        </a>
+                    </div>
+                    <div class="img-item">
+                        <a href="#" data-id="2">
+                            <img src="2"
+                                alt="shoe image">
+                        </a>
+                    </div>
+                    <div class="img-item">
+                        <a href="#" data-id="3">
+                            <img src="3"
+                                alt="shoe image">
+                        </a>
+                    </div>
+                    <div class="img-item">
+                        <a href="#" data-id="4">
+                            <img src="4"
+                                alt="shoe image">
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Game Profile -->
+            <div class="product-content">
+                <h2 class="product-title">{{title}}</h2>
+                <a href="../../index.html" class="product-link">visit OnlyGames store</a>
+                <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>4.0</span>
+                </div>
+                <!-- Price -->
+                <div class="product-price">
+                    <p class="last-price">Old Price: <span>฿{{price}}</span></p>
+                    <p class="new-price">New Price: <span>฿{{price}}</span></p>
+                </div>
+                <!--Detail-->
+                <div class="product-detail">
+                    <h2>Game Description: </h2>
+                    <p>
+                        {{description}}
+                    </p>
+                    <ul>
+                        <li>Genre: <span>RPG, Open world, FPS, Sci-fi</span></li>
+                        <li>Available: <span>in stock</span></li>
+                        <li>Publisher: <span>{{publisher}}</span></li>
+                        <li>Price: <span>{{price}}</span></li>
+                    </ul>
+                </div>
+
+                <!-- count / add to cart / compare -->
+                <div class="purchase-info">
+                    <input type="number" min="0" value="1">
+                    <button type="button" class="btn">
+                        Add to Cart <i class="fas fa-shopping-cart"></i>
+                    </button>
+                    <!-- <button type = "button" class = "btn">Compare</button> -->
+                </div>
+
+                <!-- Socail link -->
+                <div class="social-links">
+                    <p>Share At: </p>
+                    <a href="https://www.facebook.com/">
+                        <i class="fab fa-facebook-f "></i>
+                    </a>
+                    <a href="https://twitter.com/">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.whatsapp.com/">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.pinterest.com/">
+                        <i class="fab fa-pinterest"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="Slide0.js"></script>
+    <br>
+    <footer>
+        <p>Copyright ©2022 OnlyGames Website</p>
+    </footer>
+</body>
+
+
+</html>
