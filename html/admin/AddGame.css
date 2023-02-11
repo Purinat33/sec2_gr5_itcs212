@@ -47,7 +47,11 @@ body{
 } */
 
 textarea{
-  resize: none;
+
+resize: vertical;
+min-height: 20vh;
+
+max-height: 100vh;
 }
 
 .column{
