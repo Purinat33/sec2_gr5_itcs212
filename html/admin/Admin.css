@@ -29,10 +29,25 @@ h3 {
     text-align: center;
 }
 .btn:hover {
-    color: #f05462;
-    background: white;
+    color: white;
     padding: 3px 8px;
     border: 2px solid #f05462;
+    text-decoration: underline;
+}
+
+#addGame{
+    padding: 3px 8px;
+    border: 2px solid #f05462;
+}
+
+#addGame:hover,
+#addGame:visited,
+#addGame:valid,
+#addGame:link{
+    padding: 3px 8px;
+    border: 2px solid #f05462;
+    background: #f05462;
+    color: white;
 }
 
 /*btn null*/
