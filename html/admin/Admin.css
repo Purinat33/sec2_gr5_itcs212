@@ -22,6 +22,45 @@ h2 {
 h3 {
     color: #999;
 }
+
+button{
+    color: white;
+}
+
+.navbtn {
+    border: 20px;
+    background-color: transparent;
+    font-size: 1.7em;
+    color: white;
+}
+
+.navbtn:link{
+    color:white;
+}
+
+.navbtn:valid{
+    color: white;
+}
+
+.navbtn:hover{
+    color: white;
+}
+
+.navbtn:visited{
+    color: white;
+}
+
+.navbtn a,
+.navbtn a:link,
+.navbtn a:valid,
+.navbtn a:visited{
+    color: black;
+}
+
+.navbtn a:hover{
+    color: black;
+}
+
 .btn {
     background: #f05462;
     color: white;
@@ -61,7 +100,7 @@ h3 {
     background: #f05462;
     color: gray;
     padding: 5px 10px;
-    cursor: pointer;
+    cursor: no-drop;
     text-align: center;
 }
 
