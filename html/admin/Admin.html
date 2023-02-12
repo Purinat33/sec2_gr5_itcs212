@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Admin.css">
-    <title>Admin</title>
+    <title>Dashboard</title>
+
+    
+
 </head>
 
 <body>
@@ -35,7 +38,7 @@
                 <!-- TODO: -->
                 <!-- Search function (Just the name is enough) -->
                 <div class="search">
-                    <input type="text" placeholder="Search..">
+                    <input type="text" placeholder="Search.." id="search-item" onkeyup="searchA()">
             
                 </div>
             </div>
@@ -52,25 +55,25 @@
                         </tr>
                         
                         <tr>
-                            <td>Overwatch 2</td>
+                            <td class="pname">Overwatch 2</td>
                             <td>Blizzard Entertainment</td>
                             <td>0.00</td>
                             <td><a href="#" class="btn">Remove</a></td>
                         </tr>
                         <tr>
-                            <td>The Devil in Me</td>
+                            <td class="pname">The Devil in Me</td>
                             <td>Bandai Namco Entertainment</td>
                             <td>1190.00</td>
                             <td><a href="#" class="btn">Remove</a></td>
                         </tr>
                         <tr>
-                            <td>Cyberpunk 2077</td>
+                            <td class="pname">Cyberpunk 2077</td>
                             <td>CD Projekt</td>
                             <td>2322.00</td>
                             <td><a href="#" class="btn">Remove</a></td>
                         </tr>
                         <tr>
-                            <td>The Sim 4</td>
+                            <td class="pname">The Sim 4</td>
                             <td>Electronic Arts</td>
                             <td>0.00</td>
                             <td><a href="#" class="btn">Remove</a></td>
@@ -195,6 +198,29 @@
         
     </div>
     
+<script>
+    const searchA = () => {
+        const searchbox = document.getElementById("search-item").value.toUpperCase();
+        const storeitems = document.getElementsByClassName("gamecard");
+        const product = document.querySelectorAll(".gamecard");
+        const pname = storeitems.getElementsByTagName("td");
+
+
+        for (var i = 0; i < pname.length; i++) {
+            let match = product[i].getElementsByClassName('pname')[0];
+
+            if (match) {
+                let textValue = match.textContent || match.innerHTML;
+                if (textValue.toUpperCase().indexOf(searchbox) > -1) {
+                    product[i].style.display = "";
+                } else {
+                    product[i].style.display = "none";
+                }
+            }
+        }
+    }
+</script>
+
 </body>
 
 </html>
