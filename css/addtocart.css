@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
     font-size: 18px;
+    user-select: none;
 }
 body{
     display: flex;

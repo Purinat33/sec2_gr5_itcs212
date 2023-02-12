@@ -49,9 +49,9 @@ body{
 textarea{
 
 resize: vertical;
-min-height: 20vh;
-
-max-height: 100vh;
+  min-height: 20vh;
+  max-width: 60vh;
+  max-height: 100vh;
 }
 
 .column{
